@@ -1,0 +1,77 @@
+.main {
+  display: grid;
+  background-color: #e2af41c0;
+  color: #fff;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.dropdown__menu {
+  list-style: none;
+  padding: 0px;
+}
+
+.dropdown__item,
+.contact__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact__item {
+  margin: 0;
+}
+
+.dropdown__item a,
+.contact__item a {
+  color: #fff;
+}
+
+.li:hover {
+  color: #106ab3
+}
+
+/* ----------------- Footer CSS Here ----------------- */
+
+.footer1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px;
+  width: 90%;
+  margin-inline: auto;
+
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  @media screen and (max-width: 540px) {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+.heading {
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.Footer_Links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.Footer_Icons {
+  margin: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.copyrights {
+  text-align: center;
+  a {
+    font-weight: 700;
+  }
+}

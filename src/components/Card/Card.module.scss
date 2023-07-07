@@ -1,0 +1,113 @@
+@mixin CardShadow {
+    box-shadow: 0px 4px 11px 4px #00000069;
+    -webkit-box-shadow: 0px 4px 11px 4px #00000069;
+    -moz-box-shadow: 0px 4px 11px 4px #00000069;
+  }
+  
+  @mixin CardPrice {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.88);
+    font-size: 2rem;
+    color: #fff;
+    font-style: 'Inter';
+  
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+  }
+  
+  .container {
+    @include CardShadow;
+    border-radius: 8px;
+    // width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+  }
+  
+  .ImageContainer {
+    position: relative;
+    width: 100%;
+    p {
+      @include CardPrice;
+    }
+  }
+  
+  .CardImg {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    padding: 1rem;
+  
+    @media screen and (max-width: 380px) {
+      height: 200px;
+    }
+  }
+  
+  .favoursText {
+    padding-top: 1rem;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .CardBtn {
+    margin-top: auto; /* Pushes buttons to the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0.5rem ;
+  
+    p {
+      padding-left: 2rem;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-block: 1rem;
+  
+      a {
+        border-radius: 16px;
+        padding: 10px 15px;
+        color: #fff;
+        align-items: center;
+      }
+  
+      a:first-of-type {
+        background-color: #29A71A;
+        margin-right: 1rem;
+      }
+  
+      a:nth-of-type(2) {
+        background-color: #f39e2e;
+      }
+    }
+  }
+  
+  .Card_Info {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  
+    .Card_dot {
+      background-color: #f39e2e;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+  
+  .Heading {
+    font-size: 1.5rem;
+  }
+  
+  .Card_TextMain {
+    padding: 0rem 1rem 1rem;
+  }
+  
