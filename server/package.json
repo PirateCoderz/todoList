@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This is a api backend server that get data from todoForm and stores in backend",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
